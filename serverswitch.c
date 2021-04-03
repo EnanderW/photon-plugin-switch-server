@@ -67,4 +67,5 @@ static void on_switch_message(event_bridge_message *event) {
 
 void init_serverswitch() {
     add_listener(EVENT_BRIDGE_MESSAGE, (listener) on_switch_message);
+    puts("Loaded server switch plugin!");
 }
